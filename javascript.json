@@ -1,0 +1,55 @@
+{
+
+	".then(()=>{})": {
+		"prefix": ".then=>",
+		"body": [
+			".then((${1})=>{",
+			"\t${2}",
+			"})"
+		],
+		"description": "Log output to console"
+	},
+	"Create Component": {
+		"prefix": "createComponent",
+		"body": [
+			"export const ${1} = styled.${2}`",
+			"  ${3}",
+			"`;"
+		],
+		"description": ""
+	},
+	"GlobalStyled": {
+		"prefix": "GlobalStyled",
+		"body": [
+			"import { createGlobalStyle } from \"styled-components\";",
+				" ",
+				"export const GobalStyled = createGlobalStyle`",
+				"	{",
+				"		margin: 0;",
+				"		padding: 0;"
+				"	}",
+				"`,"
+		],
+		"description": "GlobalStyled"
+	},
+	"Center componente": {
+    "prefix": "center-flex",
+    "body": [
+      "display: \"flex\"",
+      "flexDirection: \"column\"",
+      "justifyContent: \"center\"",
+      "alignItems: \"center\"",
+      "gap: \"10px\""
+    ],
+    "description": "center flex"
+  },
+	"Create Styled": {
+    "prefix": "create-style",
+    "body": [
+      "export const $1 = styled(\"$2\", {",
+      "$3", //
+      "});" //
+    ],
+    "description": "Create Styled"
+  }
+}

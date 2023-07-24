@@ -1,0 +1,11 @@
+{
+	".catch(err=>log)": {
+		"prefix": ".catch=>err",
+		"body": [
+			".catch(err=>",
+			"\tconsole.log(err)",
+			")"
+		],
+		"description": "Log output to console"
+	}
+}

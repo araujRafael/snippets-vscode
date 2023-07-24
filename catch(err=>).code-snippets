@@ -1,0 +1,12 @@
+{
+	".catch(err=>log)": {
+		"scope": "javascript,typescript",
+		"prefix": ".catch=>err",
+		"body": [
+			".catch(err=>",
+			"\tconsole.log(err)",
+			")"
+		],
+		"description": "Log output to console"
+	}
+}

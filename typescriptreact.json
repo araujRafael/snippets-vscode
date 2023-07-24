@@ -1,0 +1,114 @@
+{
+  // Place your snippets for typescriptreact here. Each snippet is defined under a snippet name and has a prefix, body and
+  // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+  // same ids are connected.
+  // Example: extends HTMLAttributes<HTMLDivElement>
+  "intersection-observer": {
+    "prefix": "intersection-observer",
+    "body": [
+      "  // Efx Obs **************************************************************",
+      "const obsRef = useRef<HTMLDivElement>(null)",
+      "useEffect(() => {",
+      " const element = obsRef.current!",
+      " const obs = new IntersectionObserver(entries => {",
+      " ",
+      "   entries.forEach(entry => {",
+      "     if (entry.isIntersecting && entry.intersectionRatio >= 1) {",
+      "       // ...",
+      "             ",
+      "     }",
+      " })",
+      " ",
+      "}, { threshold: [0, .5, 1] })",
+      " // pass ref below",
+      " obs.observe(element)",
+      " ",
+      " return () => obs.disconnect()",
+      "}, [obsRef.current])"
+    ],
+    "description": "intersection-observer"
+  },
+  "className-temp-string": {
+    "prefix": "className-temp-string",
+    "body": ["className={``}"],
+    "description": "className-temp-string"
+  },
+  "useEffects": {
+    "prefix": "useEffects-snp",
+    "body": ["useEffect(() => {", "", "}, [])"],
+    "description": "useEffects"
+  },
+  "extends type component": {
+    "prefix": "extends-htmlAttr",
+    "body": ["extends HTMLAttributes<HTMLDivElement>"],
+    "description": "extends type component"
+  },
+  "comentario label": {
+    "prefix": "cmt-label",
+    "body": [
+      "// $1 ***************************************************************"
+    ],
+    "description": "label comment"
+  },
+  "Create Context": {
+    "prefix": "create-context-component",
+    "body": [
+      "import React, { createContext, useContext } from 'react';",
+      " ",
+      "const initialVavlue$1 = {",
+      " ",
+      "}",
+      " ",
+      "const $1 = createContext(null)",
+      "export const use$1 = () => useContext($1)",
+      " ",
+      "const $1Provider: React.FC = ({",
+      "children",
+      "}) => {",
+      "// Reducers",
+      "// State",
+      " ",
+      "// Effects",
+      " ",
+      "// Functions",
+      " ",
+      "// Render",
+      "return (",
+      "   <$1.Provider value={{}}>",
+      "       {children}",
+      "   </$1.Provider>",
+      " );",
+      "}",
+      " ",
+      "export default $1Provider;"
+    ],
+    "description": "Component with contect provider"
+  },
+  "Create Reducer": {
+    "prefix": "create-reducer",
+    "body": [
+      "export const initState$1 = {",
+      " ",
+      "}",
+      "type initState$1Type = typeof initState$1",
+
+      "export const $1Reducer = (",
+      "  state: initialState$1Type, action: string",
+      ") => {",
+      "  switch (action) {",
+      "    case \"\": {",
+      "      return state",
+      "    }",
+      "    case \"\": {",
+      "      return state",
+      "    }",
+      "    default: {",
+      "      return state",
+      "    }",
+      "  }",
+      "}"
+    ],
+    "description": "Create function reducer"
+  }
+}

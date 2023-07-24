@@ -1,0 +1,17 @@
+{
+  ".catc(err=>log)": {
+    "prefix": ".catch=>err",
+    "body": [".catch(err=>", "\tconsole.log(err)", ")"],
+    "description": "Log output to console"
+  },
+
+  "ImportStyled.js": {
+    "prefix": "ImportStyled.js",
+    "body": [
+		"import {",
+		"", 
+		"} from './styled.js'"
+		],
+    "description": "Log output to console"
+  }
+}
