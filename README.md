@@ -1,4 +1,4 @@
 # snippets-vscode
 meus snippets do vscode
-# primeira cois a fazer
+# primeira coisa a fazer
 renomear a pasta para "snippets"
